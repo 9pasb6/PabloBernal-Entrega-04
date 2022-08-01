@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/logo-abc-Final.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/b29ce011be.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+
+    <title>Página principal</title>
+</head>
+
+
+
+
+<!-- Para ver la grilla hay una class Border comentada -->
+
+
+
+
+
+
+<!-- ctrl + } para comentar más rápido    -->
+
+<body>
+    <div id="grilla">
+        
+
+        <header class="border"   > <!-- Encabezado de la página -->
+        
+         <div class="border">
+            <a href="index.html"><img src="media/logo-abc-Final.jpg"  class="animate__animated animate__fadeInDownBig" id="logo"></a>
+
+         </div>
+        
+           
+
+         <div class="border" id="header__div">
+            <input id="barraBuscar" type="text"name="buscar"  placeholder="Buscar por título"> <!-- Esto es netamente estético, no se como hacerlo funcionar -->
+                <input  type="submit" name="Buscar" value="Buscar" >
+         </div>
+                
+
+            
+           
+          
+        </header>
+
+        <nav class="border">
+            <div class="nav__div--ul">
+                <ul>
+                    
+                        
+                   
+                    <li class="Nav__li"><a href="index.html " >Inicio</a></li> 
+                    <li class="Nav__li"><a href="pages/ventas.html" >Ventas</a></li>
+                    <li class="Nav__li"><a href="pages/arrendamientos.html" >Arrendamientos</a></li>
+                    <li class="Nav__li"><a href="pages/nuestraEmpresa.html" >Nosotros</a></li>
+                    <li class="Nav__li"><a href="pages/contactenos.html" >Contactenos</a></li>
+                   
+                </ul>
+            </div>
+
+            <!-- <input id="inputNav" type="search" placeholder="Buscar..."> -->
+            <i class="fa fa-bars" id="menuBurger" ></i>
+        </nav>
+        
+
+
+
+
+        <section class="border">
+
+            <div id="section__inmu">
+                <article>
+                    <h2 class="animate__animated animate__fadeInDownBig">Inmuebles Destacados</h2>
+                </article>
+            </div>
+           
+            <div id="foto">
+                <img  id="fotoPrin" src="media/casa1.jpg" alt="casa1.jpg" >
+
+            </div>
+
+            <div id="cajaRoja">
+                caja roja
+            </div>
+
+
+
+        </section>
+       
+                 
+    
+        
+       
+            <aside  class="border">
+            
+                <div id="aside__div">
+                  <form method="get" enctype = "multipart/form-data">
+                 
+                     <legend>Busqueda Avanzada</legend>
+                     
+     
+                     <label for="pais">País: </label>
+                     <select name="pais" id="pais">
+                         
+                         <option value="arg">Argentina</option>
+                         <option value="bra">Brasil</option>
+                         <option value="col">Colombia</option>
+                         <option value="chl">Chile</option>
+                         <option value="vnz">Venezuela</option>
+                         <option value="ecu">Ecuador</option>
+                     </selec>
+                     <br>
+     
+                     <label for="ciudad">Ciudad: </label>  <!-- Error en navegador, no sé como solucionarlo -->
+     
+                     <input type="text" name="ciudad" placeholder="Ingresa una ciudad">
+                     <br>
+     
+                     <label for="tipoPropiedad">Tipo de Propiedad: </label>
+                     <select name="tipoPropiedad" id="tipoPropiedad">
+                         <option value="C">Casa</option>
+                         <option value="A">Apartamento</option>
+                         <option value="AU">Apartaestudio</option>
+                         <option value="CC">Casa Campestre</option>
+                         <option value="F">Finca</option>
+                         <option value="L">Lote</option>
+                     </select>
+                     <br>
+     
+                     <label for="estadoPropiedad">Estado de la Propiedad: </label>
+                     <select name="estadoPropiedad" id="estadoPropiedad">
+                         <option value="nuevo">Nuevo</option>
+                         <option value="usado">Usado</option>
+                         <option value="proyecto">Proyecto</option>
+                     </select>
+                     <br>
+     
+     
+                     <label for="alcoba">Número de Alcobas: </label>
+     
+                    
+                     <select name="alcoba" id="alcoba">
+                         <option value="a0">0</option>
+                         <option value="a1">1</option>
+                         <option value="a2">2</option>
+                         <option value="a3">3</option>
+                         <option value="a4">4</option>
+                         <option value="a5">5</option>
+                         <option value="a6">6</option>
+                         <option value="a7">7</option>
+                         <option value="a8">8</option>
+                         <option value="a9">9</option>
+                     </select>
+                     <br>
+     
+                     <label for="baño">Número de Baños: </label>
+     
+                     <select name="baño" id="baño">
+                         <option value="a0">0</option>
+                         <option value="a1">1</option>
+                         <option value="a2">2</option>
+                         <option value="a3">3</option>
+                         <option value="a4">4</option>
+                         <option value="a5">5</option>
+                         <option value="a6">6</option>
+                         <option value="a7">7</option>
+                         <option value="a8">8</option>
+                         <option value="a9">9</option>
+                     </select>
+                     <br>
+     
+                     
+                     <label for="desde">Precio Desde: </label>
+     
+                     <input type="text"name="desde" placeholder="$">
+                     <br>
+     
+                     
+                     <label for="hasta">Precio Hastas: </label>
+     
+                     <input type="text"name="hasta" placeholder="$">
+                     <br>
+     
+                   
+     
+     
+     
+     
+                     <input type="submit" name="Buscar" value="Buscar">
+     
+                
+                  </form>
+                </div>
+                
+         
+             </aside>
+           
+    
+       
+    
+    
+    
+    
+    
+        <footer class="border">
+          
+            <div class="border" id="footer__div1">
+                <h2>Ubicación y Contacto</h2>
+    
+                <h3>Ubicación</h3>
+        
+                <p>cra 15 #23-12 </p>
+                <p>Medellín - Colombia</p>
+        
+                <h3>Teléfono</h3>
+        
+                <p>(+57) 3147014069</p>
+        
+                <h3>Email</h3>
+        
+                <p>abc.inmbo@gmail.com</p>
+            </div>
+           
+
+            
+            <div class="border" id="footer__div2">
+                <ul>
+                    
+                        
+                   
+                    <li class="footer__li"><a href="index.html " >Inicio</a></li> 
+                    <li class="footer__li"><a href="pages/ventas.html" >Ventas</a></li>
+                    <li class="footer__li"><a href="pages/arrendamientos.html" >Arrendamientos</a></li>
+                    <li class="footer__li"><a href="pages/nuestraEmpresa.html" >Nosotros</a></li>
+                    <li class="footer__li"><a href="pages/contactenos.html" >Contactenos</a></li>
+                   
+                   
+                </ul>
+            </div>
+
+            <div class="border" id="footer__div3">          
+                <p id="derechos" >©2022 abc-idec.com, todos los derechos reservados.</p>
+            </div>
+
+    
+        </footer>
+
+    </div>
+    
+
+    
+    
+    
+</body>
+</html>

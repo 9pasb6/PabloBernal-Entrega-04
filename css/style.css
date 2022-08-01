@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+
+body{
+    
+    font-family: 'calibri';
+    background-image: url('../media/pexels-burst-374023.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    color: aliceblue;
+}
+
+#grilla {
+    width: 100%;
+    height: 600px;
+}
+
+
+header {
+    grid-area: header;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+    
+
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+
+
+footer {
+    grid-area: footer;
+    column-gap: 10px;
+    
+    
+}
+
+section {
+    grid-area: section;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+/* -------------------------------------------------- */
+
+
+aside,
+section,
+nav {
+    border-radius: 15px;
+}
+
+header,footer {
+    background-color: #002c4a;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+    margin: 0px 0px 0px 20px;
+   
+}
+
+
+
+#header__div{
+display: flex;
+justify-content:center;
+padding-right: 20px;
+
+ }
+
+
+ #barraBuscar{
+    height: 35px;
+    width: 250px;
+    transition: height 1s, width 1s;
+ }
+ #barraBuscar:hover{
+    height: 45px;
+    width: 260px;
+    font-size: 15px;
+ }
+
+
+
+#section__inmu{
+    text-align: center;
+    background-color:#24303cb8;
+    padding: 30px;
+    margin: 20px 20px 0px 20px;
+    border-radius: 15px;
+}
+
+/* #section__inmu h2{
+   animation-duration: 1s;
+   animation-name: aparecer;
+   animation-iteration-count:initial;
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+  */
+
+/* Hacer una galeria de imagenes rotativas */
+
+#foto{
+    
+    text-align: center;
+}
+
+
+
+img {
+    height:300px;
+    width: 300px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+
+
+
+nav {
+    background-color: #24303c7b;
+}
+
+.Nav__li{
+
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+    margin: 10px;
+    background: #002c4a;
+    
+    border-radius: 4px;
+    font-family: 'calibri';
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;   
+    transition: height 1s, width 1s;
+}
+
+.Nav__li:hover{
+    height: 20px; width: 240px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.Nav__li a {
+    
+    
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center; 
+    transition: height 1s, width 1s;
+
+}
+
+.Nav__li a:hover{
+    color: grey;
+
+}
+
+aside {
+    background-color: #24303c7b;
+}
+
+#aside__div{
+    border-radius: 15px;
+    background-color: #002c4a;
+    height: 300px;
+    padding: 30px;
+
+}
+#asideDiv__nostros{
+    
+    background-color: #002c4a;
+    border-radius: 15px;
+
+    
+}
+
+#aside__img{
+    height: 700px;
+    width: 400px;
+}
+
+#aside__tel{
+    height: 500px;
+    width: 400px;
+}
+
+
+/*------- Experimento caja animación---- */
+
+
+/* #cajaRoja{
+    width: 100px;
+  height: 100px;
+  background-color: rgba(255,0,0,0.9);
+  transition: height 2s, width 1s;
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 3s; 
+  animation-delay: 4s; 
+  /* En cuanto tiempo inicia la animación, en este caso 4sg */
+/* }
+
+@keyframes un_efecto {
+    0%{ width: 100px; }
+    25%{ width: 300px; }
+    50%{ width: 200px;
+      background-color: rgb(255, 230, 0); }
+    75%{ width: 300px;}
+
+    100%{ width: 100px;
+      background-color:green;}
+    
+}
+
+#cajaRoja:hover {
+    height: 200px; width: 200px;
+ } */
+  
+
+#section__contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionDiv__contacto{
+    padding: 40px;
+    background-color: #002c4a;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 15px;
+    border-style:double;
+
+}
+
+#section__contacto{
+    padding: 30px;
+}
+
+
+#footer__div1{
+    padding: 30px 0px 30px 30px;
+    
+}
+
+#footer__div2{
+    display: flex;
+    padding: 30px 0px 30px 30px;
+    
+}
+
+#footer__div2 li {
+    
+    font-size: 15px;   
+    list-style-type: none;
+
+
+}
+#footer__div2 a {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    transition: height 1s, width 1s;
+
+}
+
+#footer__div2 a:hover{
+    font-size: 25px;
+    color: gray;
+}
+
+#footer__div3{
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 30px 0px 30px 30px;
+    font-size: 15px;
+}
+
+#section__nosotros{
+    margin: 15px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #002c4a;
+    text-align: center;
+}
+
+#sectionDiv__logo{
+    margin: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+#sectionDiv__logo img {
+    height:300px;
+    width: 300px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow: 7px 13px 37px #000;
+
+    
+}
+
+#section__logo{
+    margin: 15px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #002c4a;
+    box-shadow: 7px 13px 37px #000;
+    text-align: center;
+    border-style:double;
+}
+
+.sectionDiv__descripcion{
+    background-color: #002c4a;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.sectionDiv__mision{
+    padding: 30px;
+}
+/* -------------------------------------------------- */
+
+#grilla,
+footer {
+    display: grid;
+}
+
+#grilla,
+header {
+    display: grid;
+}
+
+
+
+#grilla {
+    column-gap: 20px;
+    row-gap: 20px;
+    /* generar espacios entre columnas y filas */
+}
+
+
+@media screen and (min-width: 320px) {
+    #grilla {
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 1fr 4fr 2fr;
+        grid-template-areas: "header" "nav" "section" "footer";
+       
+    }
+    
+    aside, #aside__div 
+    {
+        display: none;
+    }
+
+    .Nav__li{
+        display: none;
+    }
+    
+    #menuBurger {
+        
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        height: 40px;
+        width: 40px;
+        
+
+    }
+
+
+    footer {
+        grid-template-rows: repeat(3, auto);
+        
+    }
+
+    header {
+        grid-template-columns: 30% 70% ;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    #grilla {
+        display: grid;
+        grid-template-columns: 70% auto;
+        grid-template-rows: 2fr 1fr 4fr 2fr;
+        grid-template-areas: "header header" "nav nav" "section aside" "footer footer" ;
+       
+    }
+    aside
+    {
+        display: block;
+        grid-area: aside;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            
+            
+        
+    }
+
+    #aside__div{
+        display: block;
+
+    }
+
+    .Nav__li{
+        display: block;
+        display: inline-block;
+        text-align: center;
+    }
+
+
+
+
+    #menuBurger {
+        
+        display: none;
+        
+        
+
+    }
+    footer {
+        grid-template-columns: repeat(3, auto);
+        
+    }
+
+    header {
+        grid-template-columns: 30% 70% ;
+    }
+}
+
+
+.border {
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
